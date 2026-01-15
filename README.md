@@ -7,3 +7,4 @@ This repository reflects my continuous learning and practice in problem solving.
 - Two Pointers
 - Binary Search
 - Sliding Window
+- Linked List
