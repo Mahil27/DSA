@@ -20,7 +20,7 @@ import java.util.HashMap;
  Space Complexity: O(N)
 */
 
-public class LC_76_Minimum_Window_Substring {
+class Solution{
 
     public String minWindow(String s, String t) {
 
