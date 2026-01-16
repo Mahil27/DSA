@@ -27,8 +27,6 @@ class Solution {
 
         HashMap<Character, Integer> map = new HashMap<>();
         HashMap<Character, Integer> res = new HashMap<>();
-
-        // Frequency map of s1
         for (char c : s1.toCharArray()) {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
@@ -37,15 +35,12 @@ class Solution {
             char c = s2.charAt(right);
             res.put(c, res.getOrDefault(c, 0) + 1);
 
-            // When window size equals s1 length
             if (right - left + 1 == k) {
 
-                // Compare both maps
                 if (map.equals(res)) return true;
 
-                // Remove left character from window
                 char ch = s2.charAt(left);
-                res.put(ch, res.get(ch) - 1);
+                res.put(ch, res.get(ch) - 1); 
 
                 if (res.get(ch) == 0) {
                     res.remove(ch);
